@@ -1,0 +1,30 @@
+{
+  "name": "happy-webpack",
+  "version": "1.0.0",
+  "description": "学习webpack的练习",
+  "main": "miniwebpack.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betasunk/happy-webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/betasunk/happy-webpack/issues"
+  },
+  "homepage": "https://github.com/betasunk/happy-webpack#readme",
+  "dependencies": {
+    "@babel/parser": "^7.22.7",
+    "@babel/traverse": "^7.22.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9"
+  }
+}
