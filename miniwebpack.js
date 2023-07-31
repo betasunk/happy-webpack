@@ -105,7 +105,7 @@ function bundle(graph) {
 }
 
 // ❤️ 项目的入口文件
-const graph = createGraph('./example/entry.js');
+const graph = createGraph('./mini-webpack-example/entry.js');
 const result = bundle(graph);
 
 // ⬅️ 创建dist目录，将打包的内容写入main.js中
