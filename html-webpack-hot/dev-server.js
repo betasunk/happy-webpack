@@ -1,3 +1,6 @@
+// 这个代码是从这篇文章里面复制的
+// https://github.com/careteenL/webpack-hmr#debug%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%BA%90%E7%A0%81
+
 const path = require('path')
 const express = require('express')
 const mime = require('mime')
@@ -38,6 +41,7 @@ class Server {
       }
       // /index.html   dist/index.html
       let filename = path.join(config.output.path, req.url.slice(1))
+      // statSync 方法用于获取文件或目录的状态信息。
       let stat = fs.statSync(filename)
       if (stat.isFile()) { // 判断是否存在这个文件,如果在的话直接把这个读出来发给浏览器
         let content = fs.readFileSync(filename)
